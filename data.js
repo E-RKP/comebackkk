@@ -106,3 +106,31 @@ function three (array){
 }
 
 three(users);
+
+function cambioP (user, newPass){
+  for (i=0; i<users.length;i++){
+    if (user === users[i].username){
+      users[i].password = newPass
+    }
+  }
+}
+
+cambioP('pop', 'weela123')
+console.log(users)
+
+function admino (namo, passo){
+  for (i=0; i<users.length;i++){
+    if (namo === users[i].username && passo == users[i].password){
+      console.log('accesso autorizzato')
+      console.log(users)
+      break;
+    }else{ 
+      console.log('accesso negato')
+
+    }
+  }
+ 
+  
+}
+
+admino('admin', 'admin')
