@@ -6,3 +6,42 @@ body{
   margin: 0;
   padding: 0;
 }
+
+.titolo{
+  margin: 0 auto;
+  width: 40%;
+  padding: 2rem;
+  font-size: 4rem;
+}
+
+.bottone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+
+#numerone{
+  font-size: 5rem;
+}
+
+.bottoni{
+  display: flex;
+  max-width: 50%;
+  gap: 2rem;
+}
+
+#sx,#dx{
+  border: 0px solid;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+}
+
+#sx:hover, #dx:hover{
+  cursor: pointer;
+  background-color: rgb(57, 56, 56);
+}
